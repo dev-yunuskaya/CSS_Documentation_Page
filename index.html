@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Chess</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Chess_Pieces_and_Their_Movements">Chess Pieces and Their Movements</a></li>
+            <li><a class="nav-link" href="#Basic_Rules">Basic Rules</a></li>
+            <li><a class="nav-link" href="#Basic_Strategies">Basic Strategies</a></li>
+            <li><a class="nav-link" href="#Openings">Openings</a></li>
+            <li><a class="nav-link" href="#Middlegame">Middlegame</a></li>
+            <li><a class="nav-link" href="#Endgame">Endgame</a></li>
+            <li><a class="nav-link" href="#Common_Mistakes">Common Mistakes</a></li>
+            <li><a class="nav-link" href="#Conclusion">Conclusion</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+
+            <code><h2>What is Chess?</h2></code>
+            <p>
+                Chess is a two-player strategy board game that has been played for centuries. It originated in northern India during the 6th century and spread to Persia and later to Europe. Today, it is one of the most popular games worldwide, combining skill, tactics, and strategy.
+            </p>
+
+            <code><h2>Objective of the Game</h2></code>
+            <p>
+                The goal of chess is to checkmate your opponent's king. Checkmate occurs when the king is under threat of capture and cannot escape.
+            </p>
+
+            <code><h2>The Chessboard</h2></code>
+            <ul>
+                <li>The chessboard is an 8x8 grid with alternating light and dark squares.</li>
+                <li>Each player starts with 16 pieces: 1 king, 1 queen, 2 rooks, 2 bishops, 2 knights, and 8 pawns.</li>
+                <li>The board is oriented such that the bottom-right square is a light square.</li>
+            </ul>
+            <img src="https://github.com/dev-yunuskaya/CSS_Documentation_Page/blob/main/chess-board.png?raw=true" alt="chess board">
+        </section>
+
+        <section class="main-section" id="Chess_Pieces_and_Their_Movements">
+            <header>Chess Pieces and Their Movements</header>
+            
+            <code><h2>Pawn</h2></code>
+            <ul>
+                <li>Pawns move forward one square but capture diagonally.</li>
+                <li>On their first move, pawns can advance two squares.</li>
+                <li>If a pawn reaches the opposite end of the board, it can be promoted to any piece (except a king).</li>
+                <li>Pawns can also capture en passant, a special move where a pawn can capture an opponent’s pawn that moved two squares forward from its starting position, as if it had only moved one square.</li>
+            </ul>
+    
+            <code><h2>Rook</h2></code>
+            <ul>
+                <li>Rooks move any number of squares along rows or columns, horizontally or vertically.</li>
+                <li>They are powerful in controlling open lines and are often used in attacking the opponent’s position.</li>
+                <li>Rooks work well together, especially in the endgame.</li>
+            </ul>
+    
+            <code><h2>Knight</h2></code>
+            <ul>
+                <li>Knights move in an "L" shape: two squares in one direction and one square in a perpendicular direction.</li>
+                <li>Knights are the only pieces that can jump over other pieces, which makes them unique.</li>
+                <li>A knight placed centrally on the board controls more squares than one placed at the edge.</li>
+            </ul>
+    
+            <code><h2>Bishop</h2></code>
+            <ul>
+                <li>Bishops move diagonally across the board for any number of squares.</li>
+                <li>Each bishop is limited to squares of one color, either light or dark.</li>
+                <li>Two bishops (one on each color) working together can control the entire board.</li>
+            </ul>
+    
+            <code><h2>Queen</h2></code>
+            <ul>
+                <li>The queen combines the power of both the rook and the bishop.</li>
+                <li>It can move any number of squares in straight lines (vertically, horizontally, or diagonally), making it the most powerful piece in the game.</li>
+                <li>The queen is crucial in both offense and defense.</li>
+            </ul>
+    
+            <code><h2>King</h2></code>
+            <ul>
+                <li>The king can move one square in any direction (vertically, horizontally, or diagonally).</li>
+                <li>The primary goal in chess is to checkmate the opponent’s king, but the king itself must avoid being in check.</li>
+                <li>The king has a special move called castling, which involves moving the king two squares toward a rook and then placing the rook on the opposite side of the king. Castling can only be done if neither the king nor the rook has moved before, and there are no pieces between them.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Basic_Rules">
+            <header>Basic Rules</header>
+            
+            <code><h2>Checkmate</h2></code>
+            <p>Checkmate is the primary goal in chess. It occurs when the opponent’s king is under direct attack (in "check") and cannot move to any square to escape the attack. The game ends immediately when a checkmate occurs, and the player whose king was checkmated loses.</p>
+    
+            <code><h2>Castling</h2></code>
+            <p>Castling is a special move involving the king and one of the rooks. It allows the king to move two squares toward the rook, and then the rook is placed on the opposite side of the king. This move serves two purposes: protecting the king and developing the rook.</p>
+            <ul>
+                <li>The king and rook must not have moved earlier in the game.</li>
+                <li>There must be no pieces between the king and the rook.</li>
+                <li>The king must not be in check, and it cannot move through or onto a square that is attacked by an opponent’s piece.</li>
+            </ul>
+    
+            <code><h2>En Passant</h2></code>
+            <p>En passant is a special pawn capture that can occur when a pawn advances two squares from its starting position and lands next to an opponent’s pawn. In this case, the opponent may capture the pawn as if it had only moved one square forward. This move must be made immediately after the two-square advance or it cannot be used later.</p>
+    
+            <code><h2>Stalemate</h2></code>
+            <p>A stalemate occurs when one player has no legal moves left to make, but their king is not in check. This results in a draw, and the game ends without a winner.</p>
+    
+            <code><h2>Other Draw Conditions</h2></code>
+            <ul>
+                <li>If both players agree to a draw, the game can end in a draw by mutual consent.</li>
+                <li>If the same position occurs three times during the game, a draw can be claimed by either player.</li>
+                <li>If there are insufficient pieces to checkmate the opponent, the game is automatically drawn.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Basic_Strategies">
+            <header>Basic Strategies</header>
+        
+            <code><h2>Opening Principles</h2></code>
+            <ul>
+                <li>Control the center: Try to place your pieces in the central squares (d4, e4, d5, e5) to gain more control over the board.</li>
+                <li>Develop your pieces: Move your knights and bishops early to active squares. Avoid moving the same piece multiple times during the opening unless necessary.</li>
+                <li>Ensure king safety: Usually, it's a good idea to castle early to protect your king and connect your rooks.</li>
+            </ul>
+        
+            <code><h2>Piece Value and Exchanges</h2></code>
+            <p>In chess, each piece has a general value based on its power and flexibility:</p>
+            <ul>
+                <li>Pawn: 1 point</li>
+                <li>Knight: 3 points</li>
+                <li>Bishop: 3 points</li>
+                <li>Rook: 5 points</li>
+                <li>Queen: 9 points</li>
+            </ul>
+            <p>When exchanging pieces, it's important to consider these values. Trading pieces is often favorable if you gain a material advantage, but positional factors also play a crucial role.</p>
+        
+            <code><h2>Weak Squares and Open Files</h2></code>
+            <ul>
+                <li>Weak squares: A weak square is a square that cannot be defended by pawns, making it an ideal target for your pieces to control.</li>
+                <li>Open files: Open files (columns with no pawns) are valuable for rooks and queens to exert pressure on the opponent's position.</li>
+            </ul>
+            
+            <code><h2>Coordination of Pieces</h2></code>
+            <p>Effective piece coordination is key to success in chess. Pieces should work together to control important squares, create threats, and protect each other. For example, a queen and rook working together can often create devastating attacks.</p>
+        </section>
+        
+        <section class="main-section" id="Openings">
+            <header>Openings</header>
+        
+            <code><h2>Popular Openings</h2></code>
+            <p>The opening phase of the game is crucial for setting up a strong position. Here are some of the most common and widely used openings in chess:</p>
+        
+            <h3>1. King's Pawn Opening (1.e4)</h3>
+            <p>The King's Pawn Opening is one of the most popular and aggressive openings. Moving the pawn to e4 opens up lines for both the queen and the bishop. It is the starting point for many other well-known openings.</p>
+            <ul>
+                <li>Common responses: Sicilian Defense (1.e4 c5), French Defense (1.e4 e6), Caro-Kann Defense (1.e4 c6).</li>
+            </ul>
+        
+            <h3>2. Queen's Pawn Opening (1.d4)</h3>
+            <p>The Queen's Pawn Opening focuses on controlling the center with the d4 pawn. It is less aggressive than 1.e4, but it leads to solid and flexible positions.</p>
+            <ul>
+                <li>Common responses: King's Indian Defense (1.d4 Nf6 2.c4 g6), Slav Defense (1.d4 d5 2.c4 c6).</li>
+            </ul>
+        
+            <h3>3. Italian Game (1.e4 e5 2.Nf3 Nc6 3.Bc4)</h3>
+            <p>The Italian Game is a classical opening that focuses on rapid development of the pieces. The move 3.Bc4 targets the f7 square, one of the weakest squares in Black's position early in the game.</p>
+        
+            <h3>4. Sicilian Defense (1.e4 c5)</h3>
+            <p>The Sicilian Defense is one of the most popular responses to 1.e4. By playing 1...c5, Black immediately challenges White’s central control and seeks asymmetrical positions that lead to rich and complex middlegame structures.</p>
+        
+            <h3>5. French Defense (1.e4 e6)</h3>
+            <p>The French Defense is a solid yet somewhat passive opening choice for Black. By playing 1...e6, Black prepares to counterattack the center after a d5 pawn break.</p>
+        
+            <code><h2>Common Opening Traps</h2></code>
+            <p>Many players, especially beginners, fall into opening traps. Here are a couple of well-known examples:</p>
+        
+            <h3>1. Scholar's Mate</h3>
+            <p>Scholar's Mate is a quick checkmate that can occur if Black is careless. It usually happens after the moves 1.e4 e5 2.Qh5, threatening a checkmate on the f7 square.</p>
+        
+            <h3>2. Fool's Mate</h3>
+            <p>Fool's Mate is the fastest possible checkmate in chess and occurs after 1.f3 e5 2.g4 Qh4#.</p>
+        </section>
+        
+        <section class="main-section" id="Middlegame">
+            <header>Middlegame</header>
+        
+            <code><h2>Understanding the Middlegame</h2></code>
+            <p>The middlegame begins after the opening phase and is characterized by more tactical and strategic complexity. In this phase, players aim to improve the positions of their pieces, create threats, and look for ways to attack the opponent's king or gain material advantage.</p>
+        
+            <code><h2>Common Middlegame Plans</h2></code>
+            <ul>
+                <li><strong>King Safety:</strong> Ensuring the safety of your king is a priority. You may need to defend your king's position or launch an attack on your opponent's exposed king.</li>
+                <li><strong>Piece Coordination:</strong> Well-coordinated pieces work together to control key squares, defend your position, and create threats. Pieces should not be isolated or unprotected.</li>
+                <li><strong>Centralization:</strong> Placing your pieces in the center of the board (especially the knights and rooks) increases their mobility and influence over the game.</li>
+                <li><strong>Creating Threats:</strong> Actively look for ways to create threats that force your opponent to respond defensively. For example, attacking weak pawns, threatening checkmate, or attacking an unprotected piece.</li>
+            </ul>
+        
+            <code><h2>Tactical Motifs</h2></code>
+            <p>Tactics are short-term moves or combinations that can result in an immediate gain, such as winning material or achieving checkmate. Here are some common tactical motifs in the middlegame:</p>
+        
+            <h3>1. Fork</h3>
+            <p>A fork occurs when a single piece attacks two or more of the opponent's pieces simultaneously, forcing them to defend or lose material. Knights are especially effective at forking due to their unique movement.</p>
+        
+            <h3>2. Pin</h3>
+            <p>A pin occurs when a piece is immobilized because moving it would expose a more valuable piece behind it to attack. Bishops, rooks, and queens can create pins along ranks, files, or diagonals.</p>
+        
+            <h3>3. Skewer</h3>
+            <p>A skewer is similar to a pin, but in this case, a more valuable piece is in front, and when it moves, a less valuable piece behind it is exposed to attack.</p>
+        
+            <h3>4. Discovered Attack</h3>
+            <p>A discovered attack occurs when a piece moves, revealing an attack by another piece. This can lead to powerful combinations and can catch the opponent off guard.</p>
+        
+            <code><h2>Strategic Considerations</h2></code>
+            <p>In addition to tactics, players must also consider the strategic aspects of the middlegame:</p>
+            <ul>
+                <li><strong>Pawn Structure:</strong> The arrangement of pawns on the board is crucial. Weaknesses such as isolated or doubled pawns can be exploited by your opponent.</li>
+                <li><strong>Weaknesses in the Opponent's Position:</strong> Look for weaknesses in your opponent's position, such as an exposed king, poorly defended pieces, or uncoordinated pawns.</li>
+                <li><strong>Piece Activity:</strong> Active pieces are well-placed to control important squares and create threats. Inactive pieces should be repositioned to improve their activity.</li>
+            </ul>
+        </section>
+        
+        <section class="main-section" id="Endgame">
+            <header>Endgame</header>
+        
+            <code><h2>Understanding the Endgame</h2></code>
+            <p>The endgame is the final phase of the chess game, where fewer pieces remain on the board. This phase requires precise calculation and understanding of key endgame concepts. The goal is typically to checkmate the opponent's king or promote a pawn to a queen.</p>
+        
+            <code><h2>Key Endgame Concepts</h2></code>
+            <ul>
+                <li><strong>King Activity:</strong> In the endgame, the king becomes a powerful piece. Unlike in the opening or middlegame, where the king is kept safe, the king should be active and assist in the attack or defense.</li>
+                <li><strong>Pawn Promotion:</strong> One of the primary objectives in the endgame is to promote a pawn to a queen or another piece. Advancing pawns and creating passed pawns (pawns with no opposing pawns blocking their path) is a critical strategy.</li>
+                <li><strong>Opposition:</strong> Opposition refers to a situation where two kings face each other on the board. The player who is in opposition has the move and can force the other king to move away.</li>
+                <li><strong>Passed Pawn:</strong> A passed pawn is a pawn that has no opposing pawns on the same file or adjacent files to block its progress toward promotion. Passed pawns are very valuable in the endgame.</li>
+            </ul>
+        
+            <code><h2>Basic Endgame Techniques</h2></code>
+            <h3>1. King and Queen vs. King</h3>
+            <p>The most basic endgame is the King and Queen vs. King. The player with the queen should aim to checkmate the opponent’s king by controlling the center and forcing the king to the edge of the board. With careful maneuvering, this checkmate is straightforward.</p>
+        
+            <h3>2. King and Rook vs. King</h3>
+            <p>King and Rook vs. King is another fundamental endgame. The key idea is to use the rook to cut off the opponent’s king from part of the board, then drive the king to the edge and deliver checkmate with the rook and king working together.</p>
+        
+            <h3>3. Pawn Endgames</h3>
+            <p>In pawn endgames, the focus is on pawn promotion. The players aim to promote their pawns while preventing the opponent from doing the same. Understanding concepts like opposition and zugzwang is crucial in pawn endgames.</p>
+        
+            <code><h2>Common Endgame Mistakes</h2></code>
+            <ul>
+                <li><strong>Not Activating the King:</strong> In the endgame, failing to activate the king can lead to passive play and losing chances.</li>
+                <li><strong>Missing Pawn Promotions:</strong> Neglecting to push pawns or blocking the opponent's passed pawns can result in losing a winning position.</li>
+                <li><strong>Not Using the Opponent's Weaknesses:</strong> Taking advantage of the opponent’s weaknesses, such as isolated pawns or an exposed king, is critical in the endgame.</li>
+            </ul>
+        </section>
+        
+        <section class="main-section" id="Common_Mistakes">
+            <header>Common Mistakes</header>
+        
+            <code><h2>Opening Mistakes</h2></code>
+            <p>Many players, especially beginners, make critical errors in the opening phase of the game. These mistakes can lead to a disadvantage early on. Some common opening mistakes include:</p>
+            <ul>
+                <li><strong>Ignoring the Center:</strong> Failing to control the center of the board, either with pawns or pieces, leads to a lack of space and mobility for your pieces.</li>
+                <li><strong>Moving the Same Piece Multiple Times:</strong> While developing your pieces is essential, moving the same piece multiple times in the opening can waste valuable tempo and hinder your development.</li>
+                <li><strong>Neglecting King Safety:</strong> Delaying castling or leaving your king exposed can result in an early attack and loss of material or checkmate.</li>
+            </ul>
+        
+            <code><h2>Middlegame Mistakes</h2></code>
+            <p>The middlegame is the most complex phase, and mistakes here can often lead to significant loss of material or positional advantage. Common middlegame mistakes include:</p>
+            <ul>
+                <li><strong>Overlooking Tactical Threats:</strong> Not noticing forks, pins, skewers, or discovered attacks can result in losing material or being checkmated.</li>
+                <li><strong>Neglecting Piece Coordination:</strong> Pieces should work together, but sometimes players fail to coordinate their pieces, leading to isolated pieces that are vulnerable to attack.</li>
+                <li><strong>Overextending the Pawns:</strong> Pushing too many pawns without proper piece support can create weaknesses in your position, such as isolated or backward pawns, that the opponent can exploit.</li>
+            </ul>
+        
+            <code><h2>Endgame Mistakes</h2></code>
+            <p>The endgame is crucial, and even experienced players can make critical errors here. Some common mistakes in the endgame include:</p>
+            <ul>
+                <li><strong>Not Promoting Pawns:</strong> Failing to push your pawns to promotion, or missing a chance to promote them, can cost you a winning position.</li>
+                <li><strong>Underestimating the Opponent's King:</strong> In the endgame, the king becomes an active piece. Underestimating its activity can lead to losing the initiative and potentially the game.</li>
+                <li><strong>Forgetting Opposition:</strong> In pawn endgames, not understanding opposition and how to use it effectively can prevent you from promoting your pawns or stopping your opponent from doing so.</li>
+            </ul>
+        
+            <code><h2>General Mistakes</h2></code>
+            <p>In addition to mistakes in specific phases, there are general errors that can happen throughout the game:</p>
+            <ul>
+                <li><strong>Underestimating the Opponent:</strong> Failing to fully evaluate your opponent’s threats and moves can lead to overlooking traps and losing material.</li>
+                <li><strong>Overconfidence:</strong> Being too confident can lead to taking unnecessary risks or failing to spot simple tactical ideas that your opponent can exploit.</li>
+                <li><strong>Failing to Calculate Variations:</strong> In critical moments, not fully calculating different move sequences can result in overlooking tactical opportunities or blunders.</li>
+            </ul>
+        </section>
+        
+        <section class="main-section" id="Conclusion">
+            <header>Conclusion</header>
+            <p>Chess is a game of deep strategy, requiring careful planning, tactical awareness, and an understanding of key principles at every stage of the game. By mastering the opening, middlegame, and endgame phases, players can improve their skills and increase their chances of success on the board.</p>
+        
+            <p>Whether you're a beginner or an experienced player, continuous practice, study, and reflection on your games will help you progress. It's important to learn from both your wins and losses, as each game offers valuable lessons.</p>
+        
+            <code><h2>Key Takeaways</h2></code>
+            <ul>
+                <li>Control the center, develop your pieces, and ensure king safety in the opening.</li>
+                <li>Stay alert for tactical motifs like forks, pins, and discovered attacks in the middlegame.</li>
+                <li>In the endgame, focus on pawn promotion, king activity, and understanding opposition.</li>
+                <li>Avoid common mistakes and continuously evaluate your positions and moves.</li>
+            </ul>
+        
+            <p>By incorporating these strategies and techniques into your play, you'll be well on your way to becoming a stronger chess player. Good luck, and enjoy the game!</p>
+        </section>
+        <p class="author">Yunus KAYA</p>
+    </main>
+</body>
+</html>
